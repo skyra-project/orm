@@ -74,4 +74,4 @@ jobs:
       - name: Compile TypeScript
         uses: icrawl/action-tsc@v1
         with:
-          build: "packages/orm packages/orm-postgres-driver"
+          build: packages/orm packages/orm-postgres-driver
