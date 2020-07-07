@@ -26,6 +26,8 @@ jobs:
         run: yarn --ignore-scripts --frozen-lockfile
       - name: Run ESLint
         uses: icrawl/action-eslint@v1
+        with:
+            custom-glob: "packages/**/*.ts"
 
 # TODO: re-enable when we actually got some tests
   # Testing:
@@ -72,4 +74,4 @@ jobs:
       - name: Compile TypeScript
         uses: icrawl/action-tsc@v1
         with:
-          build: packages/orm
+          build: "packages/orm packages/orm-postgres-driver"
