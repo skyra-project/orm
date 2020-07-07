@@ -7,13 +7,11 @@
 
 An ORM designed for performance and minimality, with inspiration from [EntityFramework] and [SettingsGateway].
 
-## Packages
+## About
 
-`@skyra/orm` forms the core of all the code in this repository. Aside from this package you will need a driver package for your database of choice.
+This is the primary pacakge of the `@skyra/orm` package collection. It has all the ORM functions and decorators that you will need in your project. Along with this package you will need to install a database driver, the following are available
 
 -   For PostgreSQL: [`@skyra/orm-postgres-driver`](/packages/orm-postgres-driver)
-
-More drivers may be added in the future.
 
 ## Buy us some doughnuts
 

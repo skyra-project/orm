@@ -1,12 +1,45 @@
-node_modules/
+# dependencies
+node_modules
+
+# Bad NPM is bad
 package-lock.json
-.vs/
-.idea/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build Artifacts
 dist/
+build/
+docs/
+test_out/
+*.zip
+*.tar
+*.tar.xz
+*.tar.gz
+*.7z
+*.rar
+*.tgz
+
+# Logs
+logs/
+coverage/
+*.log*
+*.tsbuildinfo
+
+# IDE Settings
+.idea/
+.vscode/*
+!.vscode/*.code-snippets
+.vs/
+*.iml
+
+# JavaScript files
 *.js
 *.js.map
-*.tsbuildinfo
-*.tgz
-docs/
-
 !jest.config.js
+!scripts/validateNoOnly.js
+!scripts/replace.config.js

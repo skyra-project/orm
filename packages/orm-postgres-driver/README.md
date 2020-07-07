@@ -1,4 +1,4 @@
-# @skyra/orm
+# @skyra/orm-postgres-driver
 
 [![Total alerts]](https://lgtm.com/projects/g/skyra-project/orm/alerts/)
 [![Language grade: JavaScript]](https://lgtm.com/projects/g/skyra-project/orm/context:javascript)
@@ -7,13 +7,9 @@
 
 An ORM designed for performance and minimality, with inspiration from [EntityFramework] and [SettingsGateway].
 
-## Packages
+## About
 
-`@skyra/orm` forms the core of all the code in this repository. Aside from this package you will need a driver package for your database of choice.
-
--   For PostgreSQL: [`@skyra/orm-postgres-driver`](/packages/orm-postgres-driver)
-
-More drivers may be added in the future.
+This is the PostgreSQL driver pacakge for the [`@skyra/orm`] ORM package. Install this along with [`@skyra/orm`] to get your amazing ORM experience.
 
 ## Buy us some doughnuts
 
