@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"homepage": "https://github.com/skyra-project/orm/tree/master/packages/orm-postgres-driver#readme",
+	"homepage": "https://github.com/skyra-project/orm/tree/main/packages/orm-postgres-driver#readme",
 	"scripts": {
 		"lint": "eslint --config ../../.eslintrc --ext ts src --fix",
 		"test": "jest",
