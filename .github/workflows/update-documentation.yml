@@ -27,6 +27,7 @@ jobs:
             - name: Replace "import type" with "import"
               run: |
                 ls -al
+                sed --version
                 sed -i 's/import type/import/g' ./packages/**/*.ts
             - name: Test Docs
               if: github.event_name == 'pull_request'
