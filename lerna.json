@@ -1,0 +1,24 @@
+{
+	"packages": ["packages/*"],
+	"version": "independent",
+	"npmClient": "yarn",
+	"useWorkspaces": true,
+	"command": {
+		"publish": {
+			"conventionalCommits": true,
+			"push": true
+		},
+		"version": {
+			"allowBranch": "master",
+			"conventionalCommits": true,
+			"push": true,
+			"message": "chore(release): publish",
+			"signGitCommit": true,
+			"signGitTag": true
+		},
+		"create": {
+			"license": "MIT",
+			"keywords": ["skyra", "typescript", "ts", "decorators", "orm", "database"]
+		}
+	}
+}

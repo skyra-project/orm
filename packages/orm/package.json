@@ -1,0 +1,48 @@
+{
+	"name": "@skyra/orm",
+	"version": "0.1.0",
+	"description": "Object Relational Mapper based on EntityFramework",
+	"author": "@skyra",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"homepage": "https://github.com/skyra-project/orm/tree/master/packages/orm#readme",
+	"scripts": {
+		"lint": "eslint --config ../../.eslintrc --ext ts src --fix",
+		"test": "jest",
+		"build": "tsc -b src",
+		"watch": "tsc -b src -w",
+		"clean": "tsc -b src --clean"
+	},
+	"dependencies": {
+		"reflect-metadata": "^0.1.13"
+	},
+	"directories": {
+		"lib": "src"
+	},
+	"files": [
+		"dist",
+		"!dist/*.tsbuildinfo"
+	],
+	"engines": {
+		"node": ">=10"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/skyra-project/orm.git"
+	},
+	"bugs": {
+		"url": "https://github.com/skyra-project/orm/issues"
+	},
+	"keywords": [
+		"skyra",
+		"typescript",
+		"ts",
+		"decorators",
+		"orm",
+		"database"
+	]
+}

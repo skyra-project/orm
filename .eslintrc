@@ -1,0 +1,50 @@
+{
+	"extends": "@skyra",
+	"parserOptions": {
+		"extraFileExtensions": [".mjs"]
+	},
+	"rules": {
+		// Handled by Prettier
+		"padded-blocks": "off",
+		"space-before-function-paren": "off",
+		"arrow-parens": "off",
+		"@typescript-eslint/no-throw-literal": "off",
+		"function-paren-newline": "off",
+
+		"@typescript-eslint/naming-convention": [
+			"error",
+			{
+				"selector": "default",
+				"format": ["camelCase"],
+				"leadingUnderscore": "forbid",
+				"trailingUnderscore": "forbid",
+				"filter": {
+					"regex": "^(?:VariableDeclarator|AssignmentExpression)$",
+					"match": false
+				}
+			},
+			{
+				"selector": "parameter",
+				"format": ["camelCase"],
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "property",
+				"modifiers": ["readonly"],
+				"format": ["camelCase"]
+			},
+			{
+				"selector": "enumMember",
+				"format": ["PascalCase"]
+			},
+			{
+				"selector": "typeLike",
+				"format": ["PascalCase"]
+			},
+			{
+				"selector": "function",
+				"format": ["PascalCase", "camelCase"]
+			}
+		]
+	}
+}
