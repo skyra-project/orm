@@ -42,3 +42,4 @@ coverage/
 *.js.map
 !jest.config.js
 !scripts/validateNoOnly.js
+!scripts/replace.config.js
