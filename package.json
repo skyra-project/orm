@@ -1,7 +1,7 @@
 {
   "name": "@skyra/orm",
   "version": "0.1.0",
-  "description": "Object Relational Mapper based on EFCore",
+  "description": "Object Relational Mapper based on EntityFramework",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/skyra-project/orm",
@@ -23,6 +23,7 @@
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "@skyra/eslint-config": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
     "@typescript-eslint/parser": "^3.6.0",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.4.0",
