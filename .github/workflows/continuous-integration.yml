@@ -1,77 +1,82 @@
 name: Continuous Integration
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
+    push:
+        branches:
+            - main
+    pull_request:
 
 jobs:
-  Linting:
-    name: Linting
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Install NodeJS v12
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Restore CI Cache
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies
-        run: yarn --ignore-scripts --frozen-lockfile
-      - name: Run ESLint
-        uses: icrawl/action-eslint@v1
-        with:
-            custom-glob: "packages/**/*.ts"
+    Linting:
+        name: Linting
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Project
+              uses: actions/checkout@v2
+            - name: Install NodeJS v12
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12
+            - name: Restore CI Cache
+              uses: actions/cache@v1
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+            - name: Install Dependencies
+              run: yarn --ignore-scripts --frozen-lockfile
+            - name: Run ESLint
+              uses: icrawl/action-eslint@v1
+              with:
+                  custom-glob: 'packages/**/*.ts'
 
-# TODO: re-enable when we actually got some tests
-  # Testing:
-  #   name: Testing - Node v${{ matrix.node_version }} - ${{ matrix.os }}
-  #   runs-on: ${{ matrix.os }}
-  #   strategy:
-  #     matrix:
-  #       node_version: [10, 12, 14]
-  #       os: [ubuntu-latest, windows-latest, macOS-latest]
-  #   steps:
-  #     - name: Checkout Project
-  #       uses: actions/checkout@v2
-  #     - name: Use Node.js ${{ matrix.node_version }}
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: ${{ matrix.node_version }}
-  #     - name: Restore CI Cache
-  #       uses: actions/cache@v1
-  #       with:
-  #         path: node_modules
-  #         key: ${{ runner.os }}-${{ matrix.node_version }}-${{ hashFiles(matrix.os == 'windows-latest' && '**\yarn.lock' || '**/yarn.lock') }}
-  #     - name: Install Dependencies
-  #       run: yarn --ignore-scripts --frozen-lockfile
-  #     - name: Test
-  #       run: yarn test
+    # TODO: re-enable when we actually got some tests
+    # Testing:
+    #   name: Testing - Node v${{ matrix.node_version }} - ${{ matrix.os }}
+    #   runs-on: ${{ matrix.os }}
+    #   strategy:
+    #     matrix:
+    #       node_version: [10, 12, 14]
+    #       os: [ubuntu-latest, windows-latest, macOS-latest]
+    #   steps:
+    #     - name: Checkout Project
+    #       uses: actions/checkout@v2
+    #     - name: Use Node.js ${{ matrix.node_version }}
+    #       uses: actions/setup-node@v1
+    #       with:
+    #         node-version: ${{ matrix.node_version }}
+    #     - name: Restore CI Cache
+    #       uses: actions/cache@v1
+    #       with:
+    #         path: node_modules
+    #         key: ${{ runner.os }}-${{ matrix.node_version }}-${{ hashFiles(matrix.os == 'windows-latest' && '**\yarn.lock' || '**/yarn.lock') }}
+    #     - name: Install Dependencies
+    #       run: yarn --ignore-scripts --frozen-lockfile
+    #     - name: Test
+    #       run: yarn test
 
-  Building:
-    name: Building
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Install NodeJS v12
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Restore CI Cache
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies
-        run: yarn --ignore-scripts --frozen-lockfile
-      - name: Compile TypeScript
-        uses: icrawl/action-tsc@v1
-        with:
-          build: packages/orm packages/orm-postgres-driver
+    Building:
+        name: Building
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Project
+              uses: actions/checkout@v2
+            - name: Install NodeJS v12
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12
+            - name: Restore CI Cache
+              uses: actions/cache@v1
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+            - name: Install Dependencies
+              run: yarn --ignore-scripts --frozen-lockfile
+            - name: Compile TypeScript files
+              run: |
+                  yarn tsc --build ./packages/orm ./packages/orm-postgres-driver
+            # - name: Compile TypeScript
+            #   uses: icrawl/action-tsc@v1
+            #   with:
+            #     build: packages/orm packages/orm-postgres-driver
+
+# TODO: -Favna- Contribute to icrawl/action-tsc to support arrays of build targets
