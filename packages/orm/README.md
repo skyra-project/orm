@@ -1,4 +1,4 @@
-# `@skyra/orm`
+# @skyra/orm
 
 [![Total alerts]](https://lgtm.com/projects/g/skyra-project/orm/alerts/)
 [![Language grade: JavaScript]](https://lgtm.com/projects/g/skyra-project/orm/context:javascript)
