@@ -21,7 +21,9 @@ export * from './errors/DriverAlreadyConnectedError';
 export * from './errors/DriverAlreadyDisconnectedError';
 
 // Managers
+export * from './managers/DriverManager';
 export * from './managers/EntityManager';
+export * from './managers/RepositoryManager';
 
 // Repositories
 export * from './repositories/BaseRepository';

@@ -28,8 +28,7 @@
 			{
 				"selector": "property",
 				"modifiers": ["readonly"],
-				"prefix": ["k"],
-				"format": ["PascalCase"]
+				"format": ["camelCase"]
 			},
 			{
 				"selector": "enumMember",

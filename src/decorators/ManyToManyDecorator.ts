@@ -1,3 +1,3 @@
 export function ManyToMany(): MethodDecorator {
-	return () => { };
+	return () => { /* noop */ };
 }

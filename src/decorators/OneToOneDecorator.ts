@@ -1,3 +1,3 @@
 export function OneToOne(): MethodDecorator {
-	return () => { };
+	return () => { /* noop */ };
 }

@@ -1,3 +1,3 @@
 export function PrimaryGeneratedColumn(): MethodDecorator {
-	return () => { };
+	return () => { /* noop */ };
 }

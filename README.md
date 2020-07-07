@@ -2,7 +2,7 @@
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/skyra-project/orm.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/skyra-project/orm/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/skyra-project/orm.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/skyra-project/orm/context:javascript)
-[![Coverage Status](https://coveralls.io/repos/github/skyra-project/orm/badge.svg?branch=master)](https://coveralls.io/github/skyra-project/orm?branch=master)
+<!-- [![Coverage Status](https://coveralls.io/repos/github/skyra-project/orm/badge.svg?branch=main)](https://coveralls.io/github/skyra-project/orm?branch=main) -->
 
 An ORM designed for performance and minimality, with inspiration from [EntityFramework] and [SettingsGateway].
 

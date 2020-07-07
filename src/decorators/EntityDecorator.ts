@@ -1,3 +1,3 @@
 export function Entity(): ClassDecorator {
-	return () => { };
+	return () => { /* noop */ };
 }

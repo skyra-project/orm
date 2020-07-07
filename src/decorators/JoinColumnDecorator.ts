@@ -1,3 +1,3 @@
 export function JoinColumn(): MethodDecorator {
-	return () => { };
+	return () => { /* noop */ };
 }

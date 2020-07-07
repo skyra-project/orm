@@ -1,3 +1,3 @@
 export function Column(): MethodDecorator {
-	return () => { };
+	return () => { /* noop */ };
 }
