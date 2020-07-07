@@ -1,0 +1,38 @@
+{
+  "name": "@skyra/orm",
+  "version": "0.1.0",
+  "description": "Object Relational Mapper based on EFCore",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/skyra-project/orm",
+  "author": "Antonio Román <kyradiscord@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "lint": "eslint --ext ts src tests --fix",
+    "docs": "typedoc",
+    "build": "tsc -b src",
+    "watch": "tsc -b src -w",
+    "up": "yarn upgrade-interactive --latest",
+    "sversion": "standard-version",
+    "commit": "git-cz",
+    "cz": "git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@skyra/eslint-config": "^5.2.1",
+    "@typescript-eslint/parser": "^3.6.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.4.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "standard-version": "^8.0.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
