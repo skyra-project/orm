@@ -25,7 +25,9 @@ jobs:
             - name: Install Dependencies
               run: yarn --ignore-scripts
             - name: Replace "import type" with "import"
-              run: sed -i 's/import type/import/g' packages/**/*.ts
+              run: |
+                ls -al
+                sed -i 's/import type/import/g' ./packages/**/*.ts
             - name: Test Docs
               if: github.event_name == 'pull_request'
               run: yarn docs
