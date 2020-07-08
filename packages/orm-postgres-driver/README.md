@@ -9,7 +9,7 @@ An ORM designed for performance and minimality, with inspiration from [EntityFra
 
 ## About
 
-This is the PostgreSQL driver pacakge for the [`@skyra/orm`] ORM package. Install this along with [`@skyra/orm`] to get your amazing ORM experience.
+This is the PostgreSQL driver package for the [`@skyra/orm`] ORM package. Install this along with [`@skyra/orm`] to get your amazing ORM experience.
 
 ## Buy us some doughnuts
 
