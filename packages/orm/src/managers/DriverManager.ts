@@ -1,7 +1,12 @@
-import type { BaseDriver } from '../driver/BaseDriver';
+import { BaseDriver } from '../driver/BaseDriver';
+import type { Ctor } from '../utils/CoreUtils';
+import { BaseManager } from './BaseManager';
 
-export class DriverManager extends Map<string, BaseDriver> {
+type Constructor = Ctor<readonly [DriverManager], BaseDriver>;
+
+export class DriverManager extends BaseManager<BaseDriver, Constructor> {
 	public defaultID: string;
+	protected holds = BaseDriver as Constructor;
 	public constructor(defaultID: string) {
 		super();
 		this.defaultID = defaultID;
@@ -10,11 +15,10 @@ export class DriverManager extends Map<string, BaseDriver> {
 	public get default() {
 		const driver = this.get(this.defaultID);
 		if (driver) return driver;
-		throw new Error(`The driver ${this.defaultID} is not available.`);
+		throw new Error(`The driver '${this.defaultID}' is not available.`);
 	}
 
-	public register(driver: BaseDriver) {
-		this.set(driver.name, driver);
-		return this;
+	protected load(repository: Constructor): BaseDriver {
+		return new repository(this);
 	}
 }
