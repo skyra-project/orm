@@ -102,7 +102,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_skyra_orm.repositorymanager-1.html#_symbol_iterator_" class="tsd-kind-icon">[<wbr>Symbol.iterator]</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_skyra_orm.repositorymanager-1.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_skyra_orm.repositorymanager-1.html#connect" class="tsd-kind-icon">connect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_skyra_orm.repositorymanager-1.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_skyra_orm.repositorymanager-1.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_skyra_orm.repositorymanager-1.html#entries" class="tsd-kind-icon">entries</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_skyra_orm.repositorymanager-1.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_skyra_orm.repositorymanager-1.html#get" class="tsd-kind-icon">get</a></li>
@@ -128,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/skyra-project/orm/blob/229dabd/packages/orm/src/managers/RepositoryManager.ts#L5">packages/orm/src/managers/RepositoryManager.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/skyra-project/orm/blob/6a679bd/packages/orm/src/managers/RepositoryManager.ts#L13">packages/orm/src/managers/RepositoryManager.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -161,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">drivers<span class="tsd-signature-symbol">:</span> <a href="_skyra_orm.drivermanager-1.html" class="tsd-signature-type">DriverManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/skyra-project/orm/blob/229dabd/packages/orm/src/managers/RepositoryManager.ts#L5">packages/orm/src/managers/RepositoryManager.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/skyra-project/orm/blob/6a679bd/packages/orm/src/managers/RepositoryManager.ts#L12">packages/orm/src/managers/RepositoryManager.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,6 +232,23 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="connect" class="tsd-anchor"></a>
+					<h3>connect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/orm/blob/6a679bd/packages/orm/src/managers/RepositoryManager.ts#L28">packages/orm/src/managers/RepositoryManager.ts:28</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
@@ -251,6 +270,23 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="disconnect" class="tsd-anchor"></a>
+					<h3>disconnect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/orm/blob/6a679bd/packages/orm/src/managers/RepositoryManager.ts#L35">packages/orm/src/managers/RepositoryManager.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -403,13 +439,28 @@
 					<a name="register" class="tsd-anchor"></a>
 					<h3>register</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">register<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">register<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="_skyra_orm.baserepository-1.html" class="tsd-signature-type">BaseRepository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/skyra-project/orm/blob/229dabd/packages/orm/src/managers/RepositoryManager.ts#L12">packages/orm/src/managers/RepositoryManager.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/skyra-project/orm/blob/6a679bd/packages/orm/src/managers/RepositoryManager.ts#L20">packages/orm/src/managers/RepositoryManager.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>repository: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/skyra-project/orm/blob/6a679bd/packages/orm/src/managers/RepositoryManager.ts#L21">packages/orm/src/managers/RepositoryManager.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -487,87 +538,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#basedriver" class="tsd-kind-icon">Base<wbr>Driver</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#baseentity" class="tsd-kind-icon">Base<wbr>Entity</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#baserepository" class="tsd-kind-icon">Base<wbr>Repository</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#column" class="tsd-kind-icon">Column</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#driveralreadyconnectederror" class="tsd-kind-icon">Driver<wbr>Already<wbr>Connected<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#driveralreadydisconnectederror" class="tsd-kind-icon">Driver<wbr>Already<wbr>Disconnected<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#drivermanager" class="tsd-kind-icon">Driver<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#entity" class="tsd-kind-icon">Entity</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#entitymanager" class="tsd-kind-icon">Entity<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#generatedcolumn" class="tsd-kind-icon">Generated<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#joincolumn" class="tsd-kind-icon">Join<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#manytomany" class="tsd-kind-icon">Many<wbr>ToMany</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#manytoone" class="tsd-kind-icon">Many<wbr>ToOne</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#onetomany" class="tsd-kind-icon">One<wbr>ToMany</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#onetoone" class="tsd-kind-icon">One<wbr>ToOne</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#primarycolumn" class="tsd-kind-icon">Primary<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#primarygeneratedcolumn" class="tsd-kind-icon">Primary<wbr>Generated<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#repositorymanager" class="tsd-kind-icon">Repository<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#repositorymanagersettings" class="tsd-kind-icon">Repository<wbr>Manager<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#repositorysettings" class="tsd-kind-icon">Repository<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_skyra_orm.basedriver-1.html" class="tsd-kind-icon">Base<wbr>Driver</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_skyra_orm.baseentity-1.html" class="tsd-kind-icon">Base<wbr>Entity</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="_skyra_orm.baserepository-1.html" class="tsd-kind-icon">Base<wbr>Repository</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_skyra_orm.driveralreadyconnectederror-1.html" class="tsd-kind-icon">Driver<wbr>Already<wbr>Connected<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_skyra_orm.driveralreadydisconnectederror-1.html" class="tsd-kind-icon">Driver<wbr>Already<wbr>Disconnected<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_skyra_orm.drivermanager-1.html" class="tsd-kind-icon">Driver<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="_skyra_orm.entitymanager-1.html" class="tsd-kind-icon">Entity<wbr>Manager</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -594,8 +564,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_skyra_orm.repositorymanager-1.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_skyra_orm.repositorymanager-1.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_skyra_orm.repositorymanager-1.html#delete" class="tsd-kind-icon">delete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_skyra_orm.repositorymanager-1.html#disconnect" class="tsd-kind-icon">disconnect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_skyra_orm.repositorymanager-1.html#entries" class="tsd-kind-icon">entries</a>
@@ -625,42 +601,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_skyra_orm.repositorymanagersettings-1.html" class="tsd-kind-icon">Repository<wbr>Manager<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_skyra_orm.repositorysettings-1.html" class="tsd-kind-icon">Repository<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#column-1" class="tsd-kind-icon">Column</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#entity-1" class="tsd-kind-icon">Entity</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#generatedcolumn-1" class="tsd-kind-icon">Generated<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#joincolumn-1" class="tsd-kind-icon">Join<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#manytomany-1" class="tsd-kind-icon">Many<wbr>ToMany</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#manytoone-1" class="tsd-kind-icon">Many<wbr>ToOne</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#onetomany-1" class="tsd-kind-icon">One<wbr>ToMany</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#onetoone-1" class="tsd-kind-icon">One<wbr>ToOne</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#primarycolumn-1" class="tsd-kind-icon">Primary<wbr>Column</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/_skyra_orm.html#primarygeneratedcolumn-1" class="tsd-kind-icon">Primary<wbr>Generated<wbr>Column</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
