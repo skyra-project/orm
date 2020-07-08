@@ -41,7 +41,17 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "tjrgg",
+      "name": "Tyler Richards",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11968358?v=4",
+      "profile": "https://github.com/tjrgg",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
